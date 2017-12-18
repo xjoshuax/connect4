@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Connect4</title>
+        <link rel="stylesheet" type="text/css" href="stylesheet.css">
+        <audio class="drop" preload="auto">
+            <source src="audio/drop.mp3" type="audio/mp3">
+        </audio>
+        <audio class="win" preload="auto">
+            <source src="audio/win.mp3" type="audio/mp3">
+        </audio>
+    </head>
+    <body>
+        <!------ This handles the start screen -------->
+        <div class="startup">
+            <img class="startlogo" src="images/logo2.png">
+        </div>
+        <!------ Logo -------->
+        <img class="logo" src="images/logo2.png">
+
+        <!------ This part handles the winning modal -------->
+        <div id='modal' class='modalElement'>
+            <div id='modalText'>
+                <h2>Congratulations!</h2>
+                <img id="gif" src="images/trophy.gif">
+                <button id='restart'>Play again</button>
+            </div>
+        </div>
+        <div id='modalOverlay' class='modalElement'></div>
+
+        <!------ This is the playing field with 7 columns, each containing 6 rows -------->
+        <div class="playingField">
+            <div class="column column1">
+                <div class="row slot row0"></div>
+                <div class="row slot row1"></div>
+                <div class="row slot row2"></div>
+                <div class="row slot row3"></div>
+                <div class="row slot row4"></div>
+                <div class="row slot row5"></div>
+            </div>
+
+            <div class="column column2">
+                <div class="row slot row0"></div>
+                <div class="row slot row1"></div>
+                <div class="row slot row2"></div>
+                <div class="row slot row3"></div>
+                <div class="row slot row4"></div>
+                <div class="row slot row5"></div>
+            </div>
+
+            <div class="column column3">
+                <div class="row slot row0"></div>
+                <div class="row slot row1"></div>
+                <div class="row slot row2"></div>
+                <div class="row slot row3"></div>
+                <div class="row slot row4"></div>
+                <div class="row slot row5"></div>
+            </div>
+
+            <div class="column column4">
+                <div class="row slot row0"></div>
+                <div class="row slot row1"></div>
+                <div class="row slot row2"></div>
+                <div class="row slot row3"></div>
+                <div class="row slot row4"></div>
+                <div class="row slot row5"></div>
+            </div>
+
+            <div class="column column5">
+                <div class="row slot row0"></div>
+                <div class="row slot row1"></div>
+                <div class="row slot row2"></div>
+                <div class="row slot row3"></div>
+                <div class="row slot row4"></div>
+                <div class="row slot row5"></div>
+            </div>
+
+            <div class="column column6">
+                <div class="row slot row0"></div>
+                <div class="row slot row1"></div>
+                <div class="row slot row2"></div>
+                <div class="row slot row3"></div>
+                <div class="row slot row4"></div>
+                <div class="row slot row5"></div>
+            </div>
+
+            <div class="column">
+                <div class="row slot row0"></div>
+                <div class="row slot row1"></div>
+                <div class="row slot row2"></div>
+                <div class="row slot row3"></div>
+                <div class="row slot row4"></div>
+                <div class="row slot row5"></div>
+            </div>
+
+        </div>
+
+        <!------ This canvas is for displaying the confetti animation -------->
+        <canvas id="canvas"></canvas>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
